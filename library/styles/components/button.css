@@ -1,0 +1,77 @@
+.button:focus-visible {
+    /* border-radius: 2px; */
+    outline-offset: 2px;
+    outline: 2px dashed black;
+}
+
+.button {
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    display: flex;
+    text-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    transition: transform .1s linear, box-shadow .1s linear, opacity .1s linear;
+}
+
+/* .button:hover {
+    opacity: .9;
+    transform: scale(1.02);
+    box-shadow: none;
+} */
+
+.button:active {
+    opacity: .9;
+    transform: scale(.98);
+    box-shadow: none;
+}
+
+.button--fill {
+    color: var(--white);
+    box-shadow: 0 10px 20px var(--light-blue);
+    background-color: var(--dark-blue);
+}
+
+.button--fill-link {
+    background-color: var(--silver);
+}
+
+.button--transparent {
+    color: var(--light-black);
+    background-color: var(--none);
+}
+
+/* -- -- -- */
+
+.button-login {
+    height: 60px;
+    padding-inline: 52px;
+}
+
+.button-register {
+    height: 60px;
+    padding-inline: 38px;
+}
+
+.button-link {
+    height: 44px;
+    padding-inline: 18px;
+}
+
+/* TODO Пограться с паддингом, так как кнопка будет иметь фул ширину родителя */
+.button-sign-in {
+    height: 60px;
+    padding-inline: 38px;
+}
+
+/* TODO Пограться с паддингом, так как кнопка будет иметь фул ширину родителя как и с первим елементом */
+.button-new-account {
+    height: 40px;
+    font-size: 14px;
+}
+
+.button-new-account.button--transparent {
+    color: var(--dark-grey);
+}

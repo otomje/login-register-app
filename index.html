@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="shortcut icon" href="./library/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./library/styles/reset.css">
+    <link rel="stylesheet" href="./library/globals.css">
+    <link rel="stylesheet" href="./library/styles/main.css">
+    <link rel="stylesheet" href="./library/styles/media.css">
+</head>
+
+<body>
+
+    <noscript>
+        <div class="noscript__message">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="noscript__image" height="20px" width="20px">
+                <path d="M819.93-53.59 280.2-593.09 169.35-482.24l197 197-48.98 48.98L71.39-482l160.07-159.83-177.87-178.1 44.67-44.68L864.61-98.26l-44.68 44.67Zm-90.52-269.45-48.74-48.74 110.22-109.98-197-197 48.74-48.98L888.61-482l-159.2 158.96Z" />
+            </svg>
+            <span class="noscript__text">Make sure JavaScript is enabled</span>
+        </div>
+    </noscript>
+
+    <div class="wrapper">
+        <img src="./library/images/objects/ellipse_1.svg" alt="" class="figure--elipse figure" height="279" width="314">
+        <img src="./library/images/objects/ellipse_2.svg" alt="" class="figure--elipse figure" height="325" width="405">
+        <img src="./library/images/objects/rectangle_1.svg" alt="" class="figure--rectangle figure" height="352" width="137">
+        <img src="./library/images/objects/rectangle_2.svg" alt="" class="figure--rectangle figure" height="292" width="66">
+    </div>
+
+    <main class="main" id="main">
+        <section class="account">
+            <div class="account__container container">
+                <img src="./library/images/illustrations/work_from_home.svg" alt="Work from home illustration" class="account__image" height="370" width="363">
+                <div class="account__body">
+                    <div class="account__descriptions">
+                        <h1 class="account__title title--color">Discover Your Dream Job here</h1>
+                        <p class="account__subtitle">Explore all the existing job roles based on your interest and study major</p>
+                    </div>
+                    <div class="account__actions">
+                        <button type="button" class="button-login button--fill button" id="button-login">Login</button>
+                        <button type="button" class="button-register button--transparent button" id="button-register">Register</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="login" style="display: none;">
+            <div class="login__container container">
+                <div class="login__descriptions">
+                    <h2 class="login__title title--color">Login here</h2>
+                    <p class="login__subtitle">Welcome back you’vebeen missed!</p>
+                </div>
+                <form action="" class="login__form" id="login-form">
+                    <div class="input-inner">
+                        <input type="email" name="login-user-email" class="input-inner__input" id="login-user-email" placeholder=" " required>
+                        <label class="input-inner__label" for="login-user-email">Email</label>
+                    </div>
+                    <div class="input-inner">
+                        <input type="password" name="login-user-password" class="input-inner__input" id="login-user-password" minlength="8" placeholder=" " required>
+                        <label class="input-inner__label" for="login-user-password">Password</label>
+                    </div>
+                    <a href="#!" class="form__forgot-link">Forgot your password?</a>
+                    <button type="button" class="button-sign-in button--fill button" id="button-sign-in">Sign in</button> <!--TODO Чекни в фигме текст, и замени клас, текст и айди кнопки -->
+                    <button type="button" class="button-new-account button--transparent button" id="button-new-account">Create new account</button>
+                </form>
+                <nav class="login__links">
+
+                </nav>
+            </div>
+        </section>
+        <!-- <section class="register">
+            <div class="register__container container"></div>
+        </section> -->
+
+    </main>
+
+</body>
+
+</html>

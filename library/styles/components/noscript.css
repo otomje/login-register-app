@@ -1,0 +1,29 @@
+.noscript__message {
+    height: 44px;
+    top: 15px;
+    left: 50%;
+    gap: 8px;
+    z-index: 9999;
+    padding-inline: 18px;
+    border-radius: 9999px;
+    display: flex;
+    position: fixed;
+    overflow: hidden;
+    align-items: center;
+    background-color: black;
+    transform: translateX(-50%);
+}
+
+.noscript__text {
+    font-size: 15px;
+    line-height: 1.4;
+    font-weight: 500;
+    text-wrap: nowrap;
+    font-family: sans-serif;
+    color: white;
+}
+
+.noscript__image {
+    flex-shrink: 0;
+    fill: white;
+}

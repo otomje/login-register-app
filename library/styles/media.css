@@ -1,0 +1,6 @@
+@media (min-width: 500px) {
+    .account__actions {
+        width: 100%;
+        flex-direction: column;
+    }
+}

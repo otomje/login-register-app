@@ -1,0 +1,72 @@
+:root {
+    --none: transparent;
+    --border-radius: 10px;
+    --scrollbar-track: rgb(255 255 255 / 0);
+    --scrollbar-thumb: rgb(150 150 150);
+
+    --white: rgb(255 255 255);
+    --silver: rgb(236 236 236);
+    --silver-blue: rgb(241 244 255);
+    --light-blue: rgb(203 214 255);
+    --dark-blue: rgb(31 65 187);
+    --grey: rgb(98 98 98);
+    --dark-grey: rgb(73 73 73);
+    --light-black: rgb(10 10 10);
+    --black: rgb(0 0 0);
+}
+
+/* TODO Чекнуть в инете есть ли норм способ зделать прокрутку чуть иначе */
+* {
+    scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./fonts/Poppins-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./fonts/Poppins-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./fonts/Poppins-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./fonts/Poppins-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* TODO @keyframes section-visible {
+    to {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateX(0);
+    }
+}
+
+@keyframes section-hidden {
+    to {
+        opacity: 0;
+        display: none;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translateX(-50%);
+    }
+} */
