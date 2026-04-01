@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account</title>
-    <link rel="shortcut icon" href="./library/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./library/images/favicon_32.png" sizes="32x32" type="image/x-icon">
+    <link rel="shortcut icon" href="./library/images/favicon_64.png" sizes="64x64" type="image/x-icon">
     <link rel="stylesheet" href="./library/styles/reset.css">
     <link rel="stylesheet" href="./library/globals.css">
     <link rel="stylesheet" href="./library/styles/main.css">
@@ -30,7 +31,7 @@
         <img src="./library/images/objects/rectangle_2.svg" alt="" class="figure--rectangle figure" height="292" width="66">
     </div>
 
-    <main class="main" id="main">
+    <main class="main">
         <section class="account">
             <div class="account__container container">
                 <img src="./library/images/illustrations/work_from_home.svg" alt="Work from home illustration" class="account__image" height="370" width="363">
@@ -40,20 +41,20 @@
                         <p class="account__subtitle">Explore all the existing job roles based on your interest and study major</p>
                     </div>
                     <div class="account__actions">
-                        <button type="button" class="button-login button--fill button" id="button-login">Login</button>
-                        <button type="button" class="button-register button--transparent button" id="button-register">Register</button>
+                        <button type="button" class="button button--login button--fill" id="button-login">Login</button>
+                        <button type="button" class="button button--register button--transparent" id="button-register">Register</button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="login" style="display: none;">
+        <section class="login is-hidden">
             <div class="login__container container">
                 <div class="login__descriptions">
                     <h2 class="login__title title--color">Login here</h2>
-                    <p class="login__subtitle">Welcome back you’vebeen missed!</p>
+                    <p class="login__subtitle">Welcome back you’ve been missed!</p>
                 </div>
-                <form action="" class="login__form" id="login-form">
+                <form action="" class="login__form">
                     <div class="input-inner">
                         <input type="email" name="login-user-email" class="input-inner__input" id="login-user-email" placeholder=" " required>
                         <label class="input-inner__label" for="login-user-email">Email</label>
@@ -62,18 +63,67 @@
                         <input type="password" name="login-user-password" class="input-inner__input" id="login-user-password" minlength="8" placeholder=" " required>
                         <label class="input-inner__label" for="login-user-password">Password</label>
                     </div>
-                    <a href="#!" class="form__forgot-link">Forgot your password?</a>
-                    <button type="button" class="button-sign-in button--fill button" id="button-sign-in">Sign in</button> <!--TODO Чекни в фигме текст, и замени клас, текст и айди кнопки -->
-                    <button type="button" class="button-new-account button--transparent button" id="button-new-account">Create new account</button>
+                    <a href="#!" class="login__forgot-link link">Forgot your password?</a>
+                    <button type="submit" class="button button--sign-in button--fill" id="button-sign-in">Sign in</button>
+                    <button type="button" class="button button--new-account button--transparent" id="button-new-account">Create new account</button>
                 </form>
-                <nav class="login__links">
-
+                <nav class="link-inner">
+                    <a href="#!" class="link-inner__link link">Or continue with</a>
+                    <div class="link-inner__body">
+                        <a href="#!" class="button button--link button--fill-link">
+                            <img src="./library/images/logos/google.svg" alt="" height="24" width="24" loading="lazy">
+                        </a>
+                        <a href="#!" class="button button--link button--fill-link">
+                            <img src="./library/images/logos/facebook.svg" alt="" height="24" width="24" loading="lazy">
+                        </a>
+                        <a href="#!" class="button button--link button--fill-link">
+                            <img src="./library/images/logos/apple.svg" alt="" height="24" width="24" loading="lazy">
+                        </a>
+                    </div>
                 </nav>
             </div>
         </section>
-        <!-- <section class="register">
-            <div class="register__container container"></div>
-        </section> -->
+
+        <section class="register is-hidden">
+            <div class="register__container container">
+                <div class="register__descriptions">
+                    <h2 class="register__title title--color">Create Account</h2>
+                    <p class="register__subtitle">Create an account so you can explore all the existing jobs</p>
+                </div>
+                <form action="" class="register__form">
+                    <div class="register__form-inner">
+                        <div class="input-inner">
+                            <input type="email" name="register-user-email" class="input-inner__input" id="register-user-email" placeholder=" " required>
+                            <label class="input-inner__label" for="register-user-email">Email</label>
+                        </div>
+                        <div class="input-inner">
+                            <input type="password" name="register-user-password" class="input-inner__input" id="register-user-password" minlength="8" placeholder=" " required>
+                            <label class="input-inner__label" for="register-user-password">Password</label>
+                        </div>
+                        <div class="input-inner">
+                            <input type="password" name="register-user-confirm-password" class="input-inner__input" id="register-user-confirm-password" minlength="8" placeholder=" " required>
+                            <label class="input-inner__label" for="register-user-confirm-password">Confirm password</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="button button--sign-up button--fill" id="button-sign-up">Sign up</button>
+                    <button type="button" class="button button--have-account button--transparent" id="button-have-account">Already have an account</button>
+                </form>
+                <nav class="link-inner">
+                    <a href="#!" class="link-inner__link link">Or continue with</a>
+                    <div class="link-inner__body">
+                        <a href="#!" class="button button--link button--fill-link">
+                            <img src="./library/images/logos/google.svg" alt="" height="24" width="24" loading="lazy">
+                        </a>
+                        <a href="#!" class="button button--link button--fill-link">
+                            <img src="./library/images/logos/facebook.svg" alt="" height="24" width="24" loading="lazy">
+                        </a>
+                        <a href="#!" class="button button--link button--fill-link">
+                            <img src="./library/images/logos/apple.svg" alt="" height="24" width="24" loading="lazy">
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </section>
 
     </main>
 

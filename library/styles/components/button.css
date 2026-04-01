@@ -7,20 +7,14 @@
 .button {
     font-size: 20px;
     font-weight: 600;
-    border-radius: var(--border-radius);
+    padding-block: 6px;
     cursor: pointer;
     display: flex;
-    text-wrap: nowrap;
     align-items: center;
     justify-content: center;
+    border-radius: var(--border-radius);
     transition: transform .1s linear, box-shadow .1s linear, opacity .1s linear;
 }
-
-/* .button:hover {
-    opacity: .9;
-    transform: scale(1.02);
-    box-shadow: none;
-} */
 
 .button:active {
     opacity: .9;
@@ -45,33 +39,41 @@
 
 /* -- -- -- */
 
-.button-login {
-    height: 60px;
+.button--login {
+    min-height: 60px;
     padding-inline: 52px;
 }
 
-.button-register {
-    height: 60px;
+.button--register {
+    min-height: 60px;
     padding-inline: 38px;
 }
 
-.button-link {
-    height: 44px;
-    padding-inline: 18px;
-}
-
-/* TODO Пограться с паддингом, так как кнопка будет иметь фул ширину родителя */
-.button-sign-in {
-    height: 60px;
+.button--sign-in,
+.button--sign-up {
+    min-height: 60px;
+    width: 100%;
     padding-inline: 38px;
 }
 
-/* TODO Пограться с паддингом, так как кнопка будет иметь фул ширину родителя как и с первим елементом */
-.button-new-account {
-    height: 40px;
+.button--sign-up {
+    margin-bottom: 30px;
+}
+
+.button--new-account,
+.button--have-account {
+    min-height: 40px;
+    width: 100%;
     font-size: 14px;
+    padding-inline: 38px;
 }
 
-.button-new-account.button--transparent {
+.button--new-account.button--transparent,
+.button--have-account.button--transparent {
     color: var(--dark-grey);
+}
+
+.button--link {
+    min-height: 44px;
+    padding-inline: 18px;
 }
