@@ -7,6 +7,7 @@
     --white: rgb(255 255 255);
     --silver: rgb(236 236 236);
     --silver-blue: rgb(241 244 255);
+    --silver-blue-alt: rgb(231 234 245);
     --light-blue: rgb(203 214 255);
     --dark-blue: rgb(31 65 187);
     --grey: rgb(98 98 98);
@@ -83,7 +84,7 @@ html {
     font-display: swap;
 }
 
-/* TODO @keyframes section-visible {
+@keyframes section-visible {
     to {
         opacity: 1;
         visibility: visible;
@@ -91,13 +92,3 @@ html {
         transform: translateX(0);
     }
 }
-
-@keyframes section-hidden {
-    to {
-        opacity: 0;
-        display: none;
-        visibility: hidden;
-        pointer-events: none;
-        transform: translateX(-50%);
-    }
-} */

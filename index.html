@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Login & Register Account - App">
     <title>Account</title>
     <link rel="shortcut icon" href="./library/images/favicon_32.png" sizes="32x32" type="image/x-icon">
     <link rel="shortcut icon" href="./library/images/favicon_64.png" sizes="64x64" type="image/x-icon">
@@ -32,7 +33,7 @@
     </div>
 
     <main class="main">
-        <section class="account">
+        <section class="account is-visible" id="account">
             <div class="account__container container">
                 <img src="./library/images/illustrations/work_from_home.svg" alt="Work from home illustration" class="account__image" height="370" width="363">
                 <div class="account__body">
@@ -48,13 +49,13 @@
             </div>
         </section>
 
-        <section class="login is-hidden">
+        <section class="login is-hidden" id="login">
             <div class="login__container container">
                 <div class="login__descriptions">
                     <h2 class="login__title title--color">Login here</h2>
                     <p class="login__subtitle">Welcome back you’ve been missed!</p>
                 </div>
-                <form action="" class="login__form">
+                <form class="login__form">
                     <div class="input-inner">
                         <input type="email" name="login-user-email" class="input-inner__input" id="login-user-email" placeholder=" " required>
                         <label class="input-inner__label" for="login-user-email">Email</label>
@@ -68,29 +69,29 @@
                     <button type="button" class="button button--new-account button--transparent" id="button-new-account">Create new account</button>
                 </form>
                 <nav class="link-inner">
-                    <a href="#!" class="link-inner__link link">Or continue with</a>
+                    <span class="link-inner__text link">Or continue with</span>
                     <div class="link-inner__body">
-                        <a href="#!" class="button button--link button--fill-link">
-                            <img src="./library/images/logos/google.svg" alt="" height="24" width="24" loading="lazy">
-                        </a>
-                        <a href="#!" class="button button--link button--fill-link">
-                            <img src="./library/images/logos/facebook.svg" alt="" height="24" width="24" loading="lazy">
-                        </a>
-                        <a href="#!" class="button button--link button--fill-link">
-                            <img src="./library/images/logos/apple.svg" alt="" height="24" width="24" loading="lazy">
-                        </a>
+                        <button type="button" class="button button--link button--fill-link">
+                            <img src="./library/images/logos/google.svg" alt="" height="24" width="24">
+                        </button>
+                        <button type="button" class="button button--link button--fill-link">
+                            <img src="./library/images/logos/facebook.svg" alt="" height="24" width="24">
+                        </button>
+                        <button type="button" class="button button--link button--fill-link">
+                            <img src="./library/images/logos/apple.svg" alt="" height="24" width="24">
+                        </button>
                     </div>
                 </nav>
             </div>
         </section>
 
-        <section class="register is-hidden">
+        <section class="register is-hidden" id="register">
             <div class="register__container container">
                 <div class="register__descriptions">
                     <h2 class="register__title title--color">Create Account</h2>
                     <p class="register__subtitle">Create an account so you can explore all the existing jobs</p>
                 </div>
-                <form action="" class="register__form">
+                <form class="register__form">
                     <div class="register__form-inner">
                         <div class="input-inner">
                             <input type="email" name="register-user-email" class="input-inner__input" id="register-user-email" placeholder=" " required>
@@ -109,23 +110,25 @@
                     <button type="button" class="button button--have-account button--transparent" id="button-have-account">Already have an account</button>
                 </form>
                 <nav class="link-inner">
-                    <a href="#!" class="link-inner__link link">Or continue with</a>
+                    <span class="link-inner__text link">Or continue with</span>
                     <div class="link-inner__body">
-                        <a href="#!" class="button button--link button--fill-link">
-                            <img src="./library/images/logos/google.svg" alt="" height="24" width="24" loading="lazy">
-                        </a>
-                        <a href="#!" class="button button--link button--fill-link">
-                            <img src="./library/images/logos/facebook.svg" alt="" height="24" width="24" loading="lazy">
-                        </a>
-                        <a href="#!" class="button button--link button--fill-link">
-                            <img src="./library/images/logos/apple.svg" alt="" height="24" width="24" loading="lazy">
-                        </a>
+                        <button type="button" class="button button--link button--fill-link">
+                            <img src="./library/images/logos/google.svg" alt="" height="24" width="24">
+                        </button>
+                        <button type="button" class="button button--link button--fill-link">
+                            <img src="./library/images/logos/facebook.svg" alt="" height="24" width="24">
+                        </button>
+                        <button type="button" class="button button--link button--fill-link">
+                            <img src="./library/images/logos/apple.svg" alt="" height="24" width="24">
+                        </button>
                     </div>
                 </nav>
             </div>
         </section>
 
     </main>
+
+    <script src="./library/scripts/visual_toggle_button.js"></script>
 
 </body>
 

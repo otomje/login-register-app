@@ -11,7 +11,7 @@
     outline: 2px solid var(--none);
     border-radius: var(--border-radius);
     background-color: var(--silver-blue);
-    transition: outline-color .1s linear;
+    transition: background-color .1s linear, outline-color .1s linear;
 }
 
 .input-inner__input::placeholder {
@@ -19,11 +19,12 @@
 }
 
 .input-inner__input:hover {
-    outline-color: var(--silver);
+    outline-color: var(--silver-blue-alt);
 }
 
 .input-inner__input:focus {
     outline-color: var(--dark-blue);
+    background-color: var(--white);
 }
 
 .input-inner__label {
@@ -49,3 +50,7 @@
     background-color: var(--white);
     transform: translateY(-50%) scale(.9);
 }
+
+/* .input-inner__input:not(:focus):not(:placeholder-shown)+.input-inner__label {
+    background-color: var(--silver-blue);
+} */
